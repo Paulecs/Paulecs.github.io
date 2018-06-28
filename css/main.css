@@ -1,0 +1,19 @@
+h1{
+	text-align:center;
+	color: blue;
+}
+.head{
+	background-color: gold;
+	width: 35%;
+	height: 75%;
+	margin: auto;
+}
+div.converter{
+	border:2px solid blue;
+	padding:0px;
+	width: 35%;
+	height: 95%;
+	position:right;
+	border-radius: 2px;
+	margin:auto;
+}
