@@ -13,7 +13,9 @@
   <meta name="robots" content="all,follow" />
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Currency Converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
   <link rel="stylesheet" href="css/main.css" />
@@ -81,10 +83,18 @@ function getCurrencyUsingJQuery() {
 <h1>Currency Converter</h1>
 </header>
 <div class="converter">
-    <input type="text" value="1" name="CURR_FR_VAL" id="CURR_FR_VAL" placeholder="Enter amount" />
-     <span class="postfix">From:</span>
-    <div class="medium-3 columns">
-      <select id="CURR_FR" class="postfix">
+  <hr />
+    <input type="text" value="1" name="CURR_FR_VAL" id="CURR_FR_VAL" placeholder="Enter amount" class="amount" />
+    <br />
+    <br />
+    <table>
+      <td>
+      <th>
+    <button class="btn">From:</button>
+    </t>
+      <tr>
+    <div class="select-div">
+      <select id="CURR_FR" class="">
         
         <option value="AED" >AED</option>
         
@@ -400,11 +410,14 @@ function getCurrencyUsingJQuery() {
         
       </select>
     </div>
-    <div class="medium-3 columns" style="text-align: center;">
-      <span class="postfix">to</span>
-    </div>
-    <div class="medium-3 columns">
-      <select id="CURR_TO" class="postfix">
+    </tr></td>
+    <td>
+      <tr>
+      <button class="btn">To:</button>
+      </tr>
+      <tr>
+    <div class="select-div">
+      <select id="CURR_TO" class="">
         
         <option value="AED" >AED</option>
         
@@ -720,6 +733,8 @@ function getCurrencyUsingJQuery() {
         
       </select>
     </div>
+    </tr>
+    </td>
 
 
 
@@ -732,10 +747,10 @@ function getCurrencyUsingJQuery() {
 <input type="text" id="CURR_VAL" readonly placeholder="Press Convert button" style="background-color: #eee; font-weight: bold;" />
 </div>
 </div>
-</div>
-</div>
-</div>
 <footer>
+  <div class="fa">
+    <div class="fa-facebook"></div>
+  </div>
 </footer>
 <script src="/js/modernizr.js"></script>
 <script src="/js/IndexController.js"></script>
