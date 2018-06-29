@@ -18,6 +18,7 @@
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-retina.png" />
+  <!--
 <style>
 .feature-box {
   text-align: center;
@@ -72,43 +73,16 @@ function getCurrencyUsingJQuery() {
 
 
 </script>
-
+-->
 </head>
 <body>
   
-    
 <header class="head">
 <h1>Currency Converter</h1>
 </header>
-<!-- End Header and Nav -->
-<!--
-<div style="height: 40px;">
-<!-- AddThis Button BEGIN
-<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-<a class="addthis_button_preferred_1"></a>
-<a class="addthis_button_preferred_2"></a>
-<a class="addthis_button_preferred_3"></a>
-<a class="addthis_button_preferred_4"></a>
-<a class="addthis_button_compact"></a>
-<a class="addthis_counter addthis_bubble_style"></a>
-</div>
--->
-<!-- AddThis Button END
-</div>
-<!--
-<div id="myDiv"></div>
-<script>loadXMLDoc();</script>
-<p>
-  Quick Start:
-</p>
--->
 <div class="converter">
-<div class="row">
-<div class="medium-6 columns">
-  <div class="row collapse">
-    <div class="medium-3 columns">
     <input type="text" value="1" name="CURR_FR_VAL" id="CURR_FR_VAL" placeholder="Enter amount" />
-    </div>
+     <span class="postfix">From:</span>
     <div class="medium-3 columns">
       <select id="CURR_FR" class="postfix">
         
@@ -746,8 +720,7 @@ function getCurrencyUsingJQuery() {
         
       </select>
     </div>
-  </div>
-</div>
+
 
 
 
@@ -758,12 +731,14 @@ function getCurrencyUsingJQuery() {
 <div class="medium-3 columns">
 <input type="text" id="CURR_VAL" readonly placeholder="Press Convert button" style="background-color: #eee; font-weight: bold;" />
 </div>
-
+</div>
+</div>
 </div>
 </div>
 <footer>
 </footer>
 <script src="/js/modernizr.js"></script>
 <script src="/js/IndexController.js"></script>
+<script src="/serviceworker/index.js"></script>
 </body>
 </html>
