@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/idb/idb.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/idb/idb.js" type="module"></script>
     <script src="js/jQuery/jquery-3.3.1.min.js"></script>
 </head>
 
@@ -55,7 +56,7 @@
 <!--conversion from the original currency section starts here-->
     <section class="input-group mb-3 content">
         <section class="input-group-prepend" id="frmOpt">
-        <label class="input-group-text" for="fromCurrency"><b>Convert From</b></label>
+        <label class="input-group-text" for="fromCurrency"><b>From</b></label>
         </section>
         <select class="custom-select fromCurrency" id="fromCurrency" name="currency">
         <option value=""></option>
@@ -66,7 +67,7 @@
 <!--conversion to the desired currency section starts here-->    
     <section class="input-group mb-3 content">
         <section class="input-group-prepend" id="frmOpt">
-        <label class="input-group-text toCurrency" for="toCurrency"><b>Convert To</b></label>
+        <label class="input-group-text toCurrency" for="toCurrency"><b>To</b></label>
         </section>
         <select class="custom-select toCurrency" id="toCurrency" name="currency">
         <option value=""></option>
@@ -75,13 +76,13 @@
 <!--conversion to the desired currency section ends here-->  
 
 <!--conversion button starts here-->
-    <button type="button" class="btn btn-outline-info convert" id="convert"><i class="fas fa-sync-alt" style="color: lightblue"></i> <b>Convert</b></button>
+    <button type="button" class="btn btn-outline-info convert" id="convert"><i class="fas fa-sync-alt" style="color: darkblue"></i> <b>Convert</b></button>
 <!--conversion button section ends here-->
 
 <!--the output section starts here-->
     <section class="input-group mb-3 output">
         <section class="input-group-prepend">
-          <span class="input-group-text"><b>Exchange Rate</b></span>
+          <span class="input-group-text"><b></b></span>
         </section>
         <input type="number" class="form-control" value="0" id="output" disabled>
     </section>
@@ -89,11 +90,30 @@
 
 </main>
 <!--main page ends here-->
+<div class='icons'>
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-snapchat-ghost"></a>
+<a href="#" class="fa fa-skype"></a>
+<a href="#" class="fa fa-android"></a>
+<a href="#" class="fa fa-dribbble"></a>
+<a href="#" class="fa fa-vimeo"></a>
+</div>
 
 <script src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/serviceworker/sw.js"></script>
+<footer>
+<div class="footer">
+</div>
+</footer>
 </body>
 </html>
 
