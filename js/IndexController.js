@@ -1,5 +1,5 @@
 if ('serviceWorker in navigator'){
-	navigator.serviceWorker.register('/serviceworker.js').then(function(registration){
+	navigator.serviceWorker.register('/js/sw.js').then(function(registration){
 	console.log('ServiceWorker registration succeeded:', registration);
 	}).catch(function(error){
 		console.log('Service Worker registration failed', error);
@@ -25,7 +25,7 @@ if ('serviceWorker in navigator'){
     reg.addEventListener('updatefound', function() {
       indexController._trackInstalling(reg.installing);
     });
-  });
+
 
   // Ensure refresh is only called once.
   // This works around a bug in "force update on reload".
@@ -35,4 +35,3 @@ if ('serviceWorker in navigator'){
     window.location.reload();
     refreshing = true;
   });
-};
