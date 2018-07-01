@@ -48,7 +48,7 @@ $("#convert").on("click", () => {
       for(let rate in parsedData){
          let calc = (parsedData[rate].val); 
       let total = (Number(amount1) * calc);
-      $('#output').val(Math.round(total * 100) / 100);
+      $('#output').val(Math.round(total * 100) / 100).format(0,0.00[0]);
         
       }
     })
