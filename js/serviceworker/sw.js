@@ -1,10 +1,10 @@
-var staticCacheName = 'wittr-static-v8';
-var contentImgsCache = 'wittr-content-imgs';
+var staticCacheName = 'currency-static-v1';
+var contentImgsCache = 'currency-content-imgs';
 var allCaches = [staticCacheName, contentImgsCache];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(caches.open(staticCacheName).then(function (cache) {
-    return cache.addAll(['/skeleton', 'js/main.js', 'css/main.css', 'imgs/icon.png', 'https://fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff', 'https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff']);
+    return cache.addAll(['/skeleton', 'js/main.js', 'js/bootstrap.min.css','css/main.css', 'imgs/icon.png', 'https://fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff', 'https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff']);
   }));
 });
 
