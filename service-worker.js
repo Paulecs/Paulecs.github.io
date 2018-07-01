@@ -20,15 +20,19 @@ this.addEventListener('install', function(event) {
                 // you'll need to add your own. You can 
                 // include any file you wish here.
                 'index.html',
-                'main.js',
-                'main.css',
+                'js/main.js',
+                'css/main.css',
+                'css/bootstrap.min.css',
+                'js/bootstrap.min.js',
+                'js/jQuery/jquery-3.3.1.min.js',
                 'index.html',
-                '/images/set1.jpg',
+                '/images/icon.jpg',
                 '/images/set2.jpg',
-                '/images/set3.jpg'
-				'/js/IndexController.js' ,
+                '/images/set3.jpg',
 				'https://free.currencyconverterapi.com/api/v5/currencies',
-				'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js',
+                'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js',
+                'https://fonts.googleapis.com/css?family=Work+Sans',
+                'https://use.fontawesome.com/releases/v5.1.0/css/all.css',
             ]);
         })
     );
@@ -99,7 +103,7 @@ this.addEventListener('activate', function (event){
         caches.keys().then(function(keys) {
             return Promise.all(keys
                 .filter(function(key) {
-                    return key.indexOf('v5') !== 0;
+                    return key.indexOf('v1') !== 0;
                 })
                 .map(function(key) {
                     return caches.delete(key);
